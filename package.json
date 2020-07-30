@@ -1,6 +1,6 @@
 {
   "name": "express-limiter-mongo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rate limiter middleware for express applications using mongo ",
   "main": "index.js",
   "scripts": {
