@@ -32,7 +32,8 @@ module.exports = function (opts) {
       var path = req.path
       var method = req.method.toLowerCase()
       var key = 'ratelimit:' + path + ':' + method + ':' + lookups;
-      if(opts.key) key = opts.key; // Allow the user to override the key, link up several middleware instances.
+      if(opts.key) 
+        key = 'ratelimit:' + opts.key + ":" + lookups; // Allow the user to override the key, link up several middleware instances.
       var col = await connect(opts);
       var limit = await col.findOne({_id:key});
       var now = Date.now()
