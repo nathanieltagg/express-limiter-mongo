@@ -1,0 +1,20 @@
+{
+  "name": "express-limiter-mongo",
+  "version": "1.0.0",
+  "description": "rate limiter middleware for express applications using mongo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "mongodb": "^3.5.9",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0",
+    "supertest": "^4.0.2",
+    "valentine": "^2.1.4"
+  }
+}
